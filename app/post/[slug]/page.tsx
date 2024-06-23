@@ -4,7 +4,7 @@ import getPostMetadata from "@/utils/getPostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 
-const getPostContent = (slug) => {
+const getPostContent = (slug: any) => {
   const folder = "posts/";
   const file = folder + `${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -33,7 +33,7 @@ export async function generateMetadata({
   };
 }
 
-const page = (props) => {
+const page = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   console.log(post);
