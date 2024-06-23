@@ -20,7 +20,7 @@ export const generateStaticParams = async () => {
   });
 };
 
-export async function generateMetdata({
+export async function generateMetadata({
   params,
   searchParams,
 }: {
