@@ -3,7 +3,7 @@ import React from "react";
 
 const PostCard = ({ post }: { post: any }) => {
   return (
-    <Link className="unstyled" href={`/post/${post.slug}`}>
+    <Link className="unstyled" href={`/post/${post.slug}`} prefetch>
       <div className="postCard">
         <h3>{post.title}</h3>
         <p>{post.bio}</p>
